@@ -1,4 +1,4 @@
-<h1 align="center">🐍 Regex Practice in Python</h1>
+<h1 align="center">🐍 RegEx Practice in Python</h1>
 
 <p align="center">
 A collection of small Python exercises using the <b>re</b> module.  
