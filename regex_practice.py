@@ -110,7 +110,7 @@ text6 = '''
 print("\n")
 print(re.findall(r'https?://[^"\'<>]+', text6))
 
-# Parse Apache-style log lines
+# 7. Parse Apache-style log lines
 # Task: Given a log line
 # 127.0.0.1 - frank [10/Oct/2000:13:55:36 -0700] "GET /apache.gif HTTP/1.0" 200 2326
 # extract the client IP, username, datetime, request method, path, protocol, status code, and response size into a tuple.
@@ -134,7 +134,7 @@ text7 = '''127.0.0.1 - frank [10/Oct/2000:13:55:36 -0700] "GET /apache.gif HTTP/
 text77 = re.match(r'(\d{1,3}(?:\.\d{1,3}){3}) - (\S+) \[([^\]]+)\] "(\S+) (\S+) (\S+)" (\d{3}) (\d+)', text7)
 print(text77.groups())
 
-# Remove Python comments
+# 8. Remove Python comments
 # Task: Strip out both single-line (# ...) and inline (code # comment) comments from the code snippet
 
 # x = 5  # initialize x
@@ -153,5 +153,6 @@ y = x * 2  # double
 '''
 
 print(re.sub(r'(?m)^[ \t]*#.*$|#.*$', '', text8).strip().replace('\n\n', '\n'))
+
 
 print("\n")
